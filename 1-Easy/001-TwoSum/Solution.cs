@@ -32,11 +32,14 @@
 
             for (int i = 0; i < nums.Length; i++)
             {
-                if (nums[i] + nums[i + 1] == target)
+                for (int j = i + 1; j < nums.Length; j++)
                 {
-                    result[0] = i;
-                    result[1] = i + 1;
-                    break;
+                    if (nums[i] + nums[j] == target)
+                    {
+                        result[0] = i;
+                        result[1] = j;
+                        break;
+                    }
                 }
             }
             return result;
