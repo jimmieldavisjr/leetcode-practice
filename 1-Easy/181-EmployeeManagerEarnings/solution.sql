@@ -29,6 +29,7 @@ Output:
 */
 
 SELECT e.name AS Employee
-FROM Employee e
-JOIN Employee m ON e.managerId = m.id
+FROM Employee AS e
+JOIN Employee AS m 
+ON e.managerId = m.id
 WHERE e.salary > m.salary;
