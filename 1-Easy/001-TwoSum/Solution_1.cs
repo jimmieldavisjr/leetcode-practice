@@ -17,7 +17,7 @@
     /// Input: nums = [2, 7, 11, 15], target = 9  
     /// Output: [0, 1]
     /// </remarks>
-    internal class Solution
+    internal class Solution_1
     {
         /// <summary>
         /// Finds two indices in the input array whose corresponding values sum to the specified target.
