@@ -23,15 +23,9 @@ namespace Leetcode._1_Easy._771_JewelsAndStones
             {
                 if (dict.ContainsKey(stones[i]))
                 {
-                    dict[stones[i]] += 1;
+                    result++;
                 }
             }
-
-            foreach (var pair in dict)
-            {
-                result += pair.Value;
-            }
-
             return result;
         }
     }
